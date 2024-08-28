@@ -1,0 +1,32 @@
+# optional database name
+#dbname = somedb
+
+# table name and (optional) table comment
+name = newtable
+comment = this is a table comment
+
+# list of columns in format {col name},{data type},{comment}
+# or without comment {col name},{data type}
+column.1 = col1,INT,this is a column comment
+column.2 = col2,BIGINT,another comment
+column.3 = col3,STRING,a comment with 'quoted text'
+column.4 = col4,STRING
+
+# optional list of partitions in format {col name},{data type},{comment}
+# or without comment {col name},{data type}
+partition.1 = repdate,TIMESTAMP,Partition by date
+partition.2 = rop,INT,Partition by rop
+
+
+# optional: bucketing details
+# number of buckets 
+buckets = 4
+
+# list of cluster columns in format {col}, {col}, {col}...
+# columns must be defined in column list (above)
+clusterBy = col1, col2
+
+# list of sort columns in format {col} ASC|DESC, {col} ASC|DESC, {col} ASC|DESC...
+# columns must be defined in column list (above)
+# if sort columns are defined, cluster cols must also be defined
+sortBy = col4 DESC, col3

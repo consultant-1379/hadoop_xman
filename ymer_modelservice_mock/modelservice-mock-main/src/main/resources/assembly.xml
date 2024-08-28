@@ -1,0 +1,41 @@
+<assembly>
+	<id>bin</id>
+	<!-- Generates a zip package containing the needed files -->
+	<formats>
+		<format>tar</format>
+	</formats>
+
+	<includeBaseDirectory>true</includeBaseDirectory>
+	<baseDirectory>model-service</baseDirectory>
+
+	<dependencySets>
+		<dependencySet>
+			<unpack>false</unpack>
+			<outputDirectory>lib</outputDirectory>
+			<includes>
+				<include>modelservice*</include>
+				<include>hadoop*</include>
+				<include>hive*</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+
+	<fileSets>
+		<fileSet>
+			<directory>${project.build.directory}/classes/bin</directory>
+			<outputDirectory>bin</outputDirectory>
+			<includes>
+				<include>*.*</include>
+			</includes>
+			<fileMode>0755</fileMode>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}/classes/etc</directory>
+			<outputDirectory>etc</outputDirectory>
+			<includes>
+				<include>*.*</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+	
+</assembly>

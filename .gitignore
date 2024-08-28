@@ -1,0 +1,33 @@
+<<<<<<< HEAD
+*target*
+/.idea
+=======
+*target*
+/.idea
+>>>>>>> 52916024c94235bbf71c7b234f2c158c04f357b1
+/forwarder-datagen/.idea/*
+/eniq_events_forwarder/.idea/*
+/file-output-adaptor/.idea/*
+/file-output-adaptor/.settings/*
+/file-output-adaptor/file-output-core/.settings/*
+
+/eniq_events_forwarder/forwarder-test-base/forwarder-test-base.iml
+/eniq_events_forwarder/forwarder-datagen/forwarder-datagen.iml
+/eniq_events_forwarder/forwarder-core/forwarder-core.iml
+/eniq_events_forwarder/eniq_events_forwarder.iml
+/forwarder-datagen/forwarder-datagen.iml
+/file-output-adaptor/file-output-adaptor.iml
+/file-output-adaptor/file-output-core/file-output-core.iml
+/eniq_events_forwarder/forwarder-test-base/forwarder-test-base (1).iml
+/forwarder-test-base/forwarder-test-base.iml
+/ymer_modelservice_mock/modelservice-mock-main/modelservice-mock-main.iml
+/ymer_modelservice_mock/modelservice-mock-client/modelservice-mock-client.iml
+/ymer_modelservice_mock/modelservice-mock-base/modelservice-mock-base.iml
+/ymer_modelservice_mock/moderlservice-mock.iml
+
+ymer_modelservice_mock/modelservice-mock-base/.settings/org.eclipse.jdt.core.prefs
+ymer_modelservice_mock/modelservice-mock-main/.settings/org.eclipse.jdt.core.prefs
+forwarder.pojoinput/.project
+forwarder.pojoinput/bin/.project
+ymer_modelservice_mock/modelservice-mock-generate/.settings/
+ymer_modelservice_mock/modelservice-mock-generate/src/main/java/com/ericsson/eniq/events/modelservice/gen/

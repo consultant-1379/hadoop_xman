@@ -1,0 +1,52 @@
+<database>
+  <!--1 or more repetitions:-->
+  <table id="narrow" name_prefix="CALLFAILURE" n_tables="20">
+    <!--1 or more repetitions:-->
+    <column name="EVENT_ID" n_columns="1">
+      <data_type type="SMALLINT">
+        <data-cardinality>10</data-cardinality>
+        <data-new-val>0</data-new-val>
+        <supp-data-length>256</supp-data-length>
+        <max-data-length>256</max-data-length>
+        <avg-data-length>60</avg-data-length>
+      </data_type>
+    </column>
+    <column name="CAUSE_VALUE" n_columns="1">
+      <data_type type="TINYINT">
+        <data-cardinality>100</data-cardinality>
+        <data-new-val>0</data-new-val>
+        <supp-data-length>256</supp-data-length>
+        <max-data-length>256</max-data-length>
+        <avg-data-length>60</avg-data-length>
+      </data_type>
+    </column>
+    <column name="EXTENDED_CAUSE_VALUE" n_columns="1">
+      <data_type type="TINYINT">
+        <data-cardinality>500</data-cardinality>
+        <data-new-val>2</data-new-val>
+        <supp-data-length>256</supp-data-length>
+        <max-data-length>256</max-data-length>
+        <avg-data-length>60</avg-data-length>
+      </data_type>
+    </column>
+    <column name="IMSI" n_columns="1">
+      <data_type type="BIGINT">
+        <data-cardinality>1000</data-cardinality>
+        <data-new-val>5</data-new-val>
+        <supp-data-length>256</supp-data-length>
+        <max-data-length>256</max-data-length>
+        <avg-data-length>60</avg-data-length>
+      </data_type>
+    </column>
+	<column name="DATETIME_ID" n_columns="1">
+      <data_type type="TIMESTAMP">
+        <data-cardinality>1000</data-cardinality>
+        <data-new-val>5</data-new-val>
+        <supp-data-length>256</supp-data-length>
+        <max-data-length>256</max-data-length>
+        <avg-data-length>60</avg-data-length>
+      </data_type>
+    </column> 
+  </table>
+  
+</database>

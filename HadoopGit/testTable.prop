@@ -1,0 +1,15 @@
+# dbname = somedb
+name = jb_test123
+comment = this is a table comment
+
+column.1 = col1,INT,this is a column comment
+column.2 = col2,BIGINT,another comment
+column.3 = col3,STRING,a comment with 'quoted text'
+column.4 = col4,SMALLINT
+
+partition.1 = col5,TIMESTAMP,Partition by date
+
+buckets = 4
+clusterBy = col1, col2
+sortBy = col4 DESC, col3
+

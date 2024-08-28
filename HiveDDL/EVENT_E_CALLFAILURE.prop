@@ -1,0 +1,11 @@
+# dbname = somedb
+name = EVENT_E_CALLFAILURE
+
+column.1 = EVENT_ID,TINYINT
+column.2 = CAUSE_VALUE,TINYINT
+column.3 = EXTENDED_CAUSE_VALUE,TINYINT
+column.4 = IMSI,BIGINT
+column.5 = DATETIME_ID,TIMESTAMP
+
+file.format = TEXTFILE
+file.delimiter = ,

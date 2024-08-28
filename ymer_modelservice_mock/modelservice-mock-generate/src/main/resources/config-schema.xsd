@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="tablelist">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="table" type="CallFailure" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="CallFailure">
+		<xs:sequence>
+			<xs:element name="eventId" type="xs:short" default="-1"/>
+			<xs:element name="causeValue" type='xs:byte' />
+			<xs:element name="extendedCauseValue" type="xs:byte" />
+			<xs:element name="imsi" type="xs:long" />
+			<xs:element name="dateTimeId" type="xs:long" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

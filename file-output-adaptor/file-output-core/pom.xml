@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>file-output-adaptor</artifactId>
+		<groupId>com.ericsson.oss.common.foa</groupId>
+		<version>0.1</version>
+	</parent>
+	<artifactId>file-output-core</artifactId>
+	<name>file-output-core</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.hazelcast</groupId>
+			<artifactId>hazelcast-wm</artifactId>
+			<version>3.0-RC2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ericsson.oss.itpf.common.flow</groupId>
+			<artifactId>eventflow-api</artifactId>
+			<version>1.0.178</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ericsson.oss.services</groupId>
+			<artifactId>eps-api</artifactId>
+			<version>1.0.221</version>
+		</dependency>
+	</dependencies>
+</project>

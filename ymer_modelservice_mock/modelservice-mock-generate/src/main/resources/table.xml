@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<tablelist xmlns:xsi="http://www.ericsson.com/table"> 
+    <table>
+		<eventId>101</eventId>
+		<causeValue>14044</causeValue>
+		<extendedCauseValue>153</extendedCauseValue>
+		<imsi>450700521015400</imsi>
+		<dateTimeId>15052009</dateTimeId>
+	</table>
+	<table>
+		<eventId>102</eventId>
+		<causeValue>1544</causeValue>
+		<extendedCauseValue>154</extendedCauseValue>
+		<imsi>450700521015401</imsi>
+		<dateTimeId>15052009</dateTimeId>
+	</table>
+	<table>
+		<eventId>103</eventId>
+		<causeValue>14414</causeValue>
+		<extendedCauseValue>155</extendedCauseValue>
+		<imsi>450700521015402</imsi>
+		<dateTimeId>15052009</dateTimeId>
+	</table>
+	<table>
+		<eventId>104</eventId>
+		<causeValue>17044</causeValue>
+		<extendedCauseValue>156</extendedCauseValue>
+		<imsi>450700521015403</imsi>
+		<dateTimeId>15052009</dateTimeId>
+	</table>
+</tablelist>  

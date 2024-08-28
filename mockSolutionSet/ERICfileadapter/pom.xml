@@ -1,0 +1,85 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ericsson.oss.datalayer</groupId>
+		<artifactId>mock-solution-set</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>ERICfileadapter</artifactId>
+	<packaging>rpm</packaging>
+
+	<properties>
+		<com.ericsson.oss.rpm.architecture>noarch</com.ericsson.oss.rpm.architecture>
+		<rpm-root>opt</rpm-root>
+		<comp-name>ericsson</comp-name>
+		<install-path>fileOutputAdapter</install-path>
+		<user_name>assure</user_name>
+		<group_name>assure</group_name>
+		<full_install_path>/${rpm-root}/${comp-name}/${install-path}</full_install_path>
+		<home_dir>/home/${user_name}</home_dir>
+	</properties>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>rpm-maven-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<skip>true</skip>
+					<inherited>true</inherited>
+					<copyright>2013 Ericsson AB All rights reserved</copyright>
+					<group>ERI-NMS</group>
+					<requires>
+						<require>ERICepsjse_CXP9030383 &gt;= ${version.eps}</require>
+					</requires>
+					<vendor>Ericsson AB</vendor>
+					<url>www.ericsson.com</url>
+					<mappings>
+						<mapping>
+							<directory>/${rpm-root}/${comp-name}</directory>
+							<filemode>775</filemode>
+							<username>${user_name}</username>
+							<groupname>${group_name}</groupname>
+							<configuration>false</configuration>
+							<directoryIncluded>true</directoryIncluded>
+							<recurseDirectories>true</recurseDirectories>
+							<sources>
+								<source>
+									<location>src/main/resources/</location>
+								</source>
+							</sources>
+						</mapping>
+
+					</mappings>
+
+					<preinstallScriptlet>
+						<scriptFile>target/classes/preinstall.sh</scriptFile>
+						<fileEncoding>utf-8</fileEncoding>
+					</preinstallScriptlet>
+					<postinstallScriptlet>
+						<scriptFile>target/classes/postinstall.sh</scriptFile>
+						<fileEncoding>utf-8</fileEncoding>
+					</postinstallScriptlet>
+					<preremoveScriptlet>
+						<scriptFile>target/classes/preremove.sh</scriptFile>
+						<fileEncoding>utf-8</fileEncoding>
+					</preremoveScriptlet>
+					<postremoveScriptlet>
+						<scriptFile>target/classes/postremove.sh</scriptFile>
+						<fileEncoding>utf-8</fileEncoding>
+					</postremoveScriptlet>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
